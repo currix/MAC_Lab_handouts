@@ -1,0 +1,13 @@
+# Created by Currix
+*.mod
+*.o
+*.aux
+*.log
+*.blg
+*.bbl
+*~
+*.dvi
+*.nav
+*.out
+*.snm
+*.toc
