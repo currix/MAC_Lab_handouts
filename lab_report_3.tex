@@ -116,7 +116,7 @@ rain, sudden increase or direction change of wind, strong gusts, or
 sudden temperature or visibility variations.
 
 \section{Objectives}
-
+Theo objective of this lab session is that student get acquainted with SYNOP code and make them able to codify a given weather report as well as decodify it and prepare a graphical representation.
 
 
 \section{Synop Code Description and Lab Procedures}
@@ -148,7 +148,7 @@ There are four main groups:
 \subsection{000 Group: Identification and Location}
 
 \begin{description}
-\item[$IIiii$] The WMO number of the station.
+\item[$IIiii$] The WMO number of the station\cite{ogimet}.
 \item[$IIIII$] Ship or Buoy Observations.The ship or buoy identifier.
 \item[$YYGGi_w$]
   \begin{tabular}{cl}
@@ -437,8 +437,40 @@ This is a more specialized field that will not be covered in the present lab ses
 This is a more specialized field that will not be covered in the present lab session.
 
 
-\section{Experimental Data}
+\section{Graphical Representation}
 
+Synoptic maps use a simple graphical representation to easily convey the information in a condensed way. The way the information is arranged can be found in figure \ref{fig_synop_scheme}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.65\textwidth]{Figs/Station_model.png}
+\caption{Example of graphical codification of a SYNOP report. Source: National Weather Service Forecast Office, Nashville, TN. Notice that we will report temperatures in degrees Celsius instead of Farenheit.}\label{fig_synop_scheme}
+\end{center}
+\end{figure}
+
+The conventional symbols used for cloud cover, pressure trend, past weather, and cloud types in this representation can be found in figure \ref{fig_synop_symbols_1}. The wind speed and present weather graphical codification are included in figures \ref{fig_synop_symbols_2} and \ref{fig_synop_symbols_3}.
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figs/wxcode2.png}
+\caption{Example of standard graphical codification for cloud cover, pressure trend, past weather, and cloud types in a SYNOP report. Source: Weather Graphics Technologies.}\label{fig_synop_symbols_1}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.4\textwidth]{Figs/partc_3.png}
+\caption{Conventional codification for wind speed in a SYNOP report. Source: RMetS, The Royal Meteorological Society.}\label{fig_synop_symbols_2}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Figs/wxcode1.png}
+\caption{Example of standard graphical codification for present weather in a SYNOP report. Source: Weather Graphics Technologies.}\label{fig_synop_symbols_3}
+\end{center}
+\end{figure}
 
 
 \newpage
@@ -446,9 +478,6 @@ This is a more specialized field that will not be covered in the present lab ses
 
 
 \nocite{WinNT}
-\newpage
-\appendix
-\section{Synop Code Tables}
 
 %----------------------------------------------------------------------------------------
 
