@@ -43,7 +43,7 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{Meteorology Report Codes} \\ Meteorology
+\title{\textbf{Surface Pressure Charts and  Meteorology Codes} \\ Meteorology
   \& Climatology} % Title
 
 \author{Environmental Science Degree} % Author name
@@ -66,8 +66,10 @@ Instructor: & Prof.~F.~Pérez-Bernal % Instructor/supervisor
 
 % If you wish to include an abstract, uncomment the lines below
 \begin{abstract}
-This lab session aim is to present meteorology report codes, in
-particular the SYNOP code. Students should
+This lab session aim is that students understand isobars and their relationship with wind speed,
+identify various pressure systems and fronts on a weather chart, and 
+interpret and produce plotted weather symbols. For the latter case  meteorology report codes, in
+particular the SYNOP code, is presented. Students should
 learn to encode a general weather situation to this code as well as to
 interpret the code both graphically and as a short weather report.
 \end{abstract}
@@ -80,12 +82,28 @@ interpret the code both graphically and as a short weather report.
 % report is predominantly used by pilots in fulfillment of a part of a
 % pre-flight weather briefing, and by meteorologists, who use
 % aggregated METAR information to assist in weather forecasting.
+Surface pressure charts show the surface pressure pattern using
+\textit{isobars} (a particular kind of \textit{isopleths}, solid lines joining points of equal sea level pressure) and
+indicate areas of high ($H$) and low pressure ($L$) along with their
+central pressure value. High pressure is usually associated with
+settled weather while low pressure is normally associated with
+unsettled weather. 
 
-SYNOP stands for \textit{surface SYNOPtic observation} and it is a numerical
-code (called FM-12 by the World Meteorological Office WMO\cite{FM-12}) that has been used for decades as the main way of reporting and transmitting
-weather information. The observations could be made by manned and automated weather stations. 
+In these charts fronts and other information of meteorological
+intenres can be also displayed. In particular, in the so called
+\textit{synoptic charts} an extensive information about the state of
+the atmosphere in particular places, usually reported with the SYNOP
+code, is graphically encoded and represented.
 
-The international SYNOP format has been used for real time transmission of synoptic weather observations for about 50 years and SYNOP reports are typically sent every six hours by Deutscher
+SYNOP stands for \textit{surface SYNOPtic observation} and it is a
+numerical code (called FM-12 by the World Meteorological Office
+WMO\cite{FM-12}) that has been used for decades as the main way of
+reporting and transmitting weather information. The observations could
+be made by manned and automated weather stations.
+
+The international SYNOP format has been used for real time
+transmission of synoptic weather observations for about 50 years and
+SYNOP reports are typically sent every six hours by Deutscher
 Wetterdienst on shortwave and low frequency using RTTY. The
 introduction of Internet made this redundant.
 
@@ -116,10 +134,117 @@ rain, sudden increase or direction change of wind, strong gusts, or
 sudden temperature or visibility variations.
 
 \section{Objectives}
-Theo objective of this lab session is that student get acquainted with SYNOP code and make them able to codify a given weather report as well as decodify it and prepare a graphical representation.
+The objectives of this lab session are the following:
+\begin{enumerate}
+\item Students understand surface pressure maps and their relationship
+  with wind speed.
+\item Identify pressure systems and fronts on a synoptic weather
+  chart.
+\item Get acquainted with the SYNOP code to interpret and produce plotted
+  weather symbols.
+\end{enumerate}
+
+\section{Isobars, pressure and winds}
+Isobar lines join points of equal pressure, in a similar way to height
+contours, on weather charts. Charts showing isobars help to identify
+anticyclones (high atmospheric pressure areas) and depressions or
+cyclones (low pressure areas). Pressure is measured in
+millibars\footnote{Remember: \SI{1}{mb} = \SI{1}{hPa}} and isobars are
+normally drawn at intervals of $\Delta p = \SI{4}{mb}$. Pressure
+values are corrected to Mean Sea Level Pressure (MSLP) before being
+plotted on a map, this ensures that altitude does not affect the
+mapping.
+
+Drawing isobars in a map it is important to take into account the
+following considerations.
+
+\begin{itemize}
+\item Each map point can only be associated with one isobar, thus
+  isobar lines never cross. 
+\item Isobar lines are continuous, forming loops or terminationg in the
+  map edges, but never branch or terminate in a certain point.
+\item A particular sense can be given to an isobar considering that
+  the pressure sould grow to the right of the given sense.
+\end{itemize} 
+
+Isobars are also helpful because their distribution helps us to
+understand the direction and strength of wind in a particular
+location. Where isobars are \textit{close together}, for example near
+a low pressure area, they indicate \textit{strong} winds. Where the
+isobars are more \textit{widely spaced}, e.g.\ near an anticyclone,
+they indicate \textit{light} winds.
+
+Wind blows almost parallel to the isobars. Around a high pressure area
+(an anticyclone) winds  blow clockwise and slightly across the isobars, away from
+the centre of the anticyclone. In low pressure zones, wind blows
+anticlockwise slightly across the isobars towards the centre of the low pressure.
+
+\textit{Buys Ballot’s law} states that if you stand with your back to
+the wind in the northern Hemisphere, low pressure will be on your
+left. With the help of this law that you can work out the wind direction at different
+locations on a weather chart.
+
+There are several features of weather chart that can be easily
+identified.
+
+An \textit{anticyclone}, also known as a ‘high’ can be identified on a
+weather chart as an (often large) area of widely spaced isobars, where
+pressure is higher than surrounding area and the highest pressure
+occurs at the center which is known as the ‘high pressure
+center’. Anticyclones can bring warm and sunny weather in summer, but
+cold and foggy weather in winter. In association with anticyclones,
+\textit{ridges} are elongated extensions of areas of high
+pressure. They bring similar weather to that associated with
+anticyclones.
+
+A \textit{cyclone}, also known as a depression or a ‘low’ can be recognised on a weather
+chart by an area of closely spaced isobars, often in a roughly
+circular shape, where pressure is lower than surrounding areas. They
+are often accompanied by fronts. The lowest pressure occurs at the
+'low pressure center', in the middle of a depression. Cyclones are
+often associated with strong winds and heavy rain and are nearly
+always accompanied by fronts. Associated with cyclones,
+\textit{troughs} are elongated extensions of areas of low
+pressure and bring similar weather to that associated with
+depressions. 
 
 
-\section{Synop Code Description and Lab Procedures}
+\textit{Cold fronts} can be identified on weather charts as bold lines
+with triangles. These are blue when displayed on colour charts. The
+points of the triangle indicate the direction in which the front is
+moving. A cold front indicates a change in air mass, where warmer air
+is being replaced by colder air. They often bring short spells of
+heavy rainfall in the form of showers and squally winds, and are
+accompanied by a decrease in temperature, a veer in wind direction and
+a change to brighter showery conditions. 
+
+\textit{Warm fronts} can be identified on weather charts as bold lines
+with semi-circles or humps. These are coloured red when displayed on
+colour charts. The direction of the humps indicates the direction in
+which the front is moving. A warm front indicates a change from a
+colder to a warmer air mass. They often bring spells of prolonged and
+sometimes heavy rainfall, with strong winds. 
+
+The warm sector of a depression is located behind the warm front and
+ahead of the cold front. It often brings mild temperatures but the
+weather can be overcast with drizzle.
+
+\textit{Occluded fronts} can be identified on weather charts as bold
+lines with sets of triangles and semi-circles. These are coloured
+purple on coloured weather charts. The direction in which the symbols
+face indicates the direction in which the front is
+travelling. Occlusions are formed when the cold front overtakes the
+warm front, therefore they have similar characteristics to a cold
+front, but less intense.
+
+Other features of interest are \textit{troughs} and \textit{cols}.
+\textit{Troughs} are lines of low
+pressure, high vorticity, clouds, and possible precipitation, wind
+shift and confluence. They often do not possess the strong horizontal
+gradientes of temperature and moisture that characterize fronts. \textit{Cols} can be identified as an area of slack pressure between two anticyclones and two depressions.
+
+
+\section{Synop Code Description}
 
 The general syntax of the SYNOP code is as follows
 \begin{align*}
@@ -148,9 +273,9 @@ There are four main groups:
 \subsection{000 Group: Identification and Location}
 
 \begin{description}
-\item[$IIiii$] The WMO number of the station\cite{ogimet}.
-\item[$IIIII$] Ship or Buoy Observations.The ship or buoy identifier.
-\item[$YYGGi_w$]
+\item[$\pmb{IIiii}$] The WMO number of the station\cite{stindex,ogimet}.
+\item[$\pmb{IIIII}$] Ship or Buoy Observations.The ship or buoy identifier.
+\item[$\pmb{YYGGi_w}$]
   \begin{tabular}{cl}
     $YY$ & The day of the month\\
     $GG$ & The hour of the observation (UTC)\\
@@ -160,7 +285,7 @@ There are four main groups:
     2  & knots (estimated)\\
     3  & knots (from anemometer)
   \end{tabular}
-\item[$99LLL QLLLL$]
+\item[$\pmb{99LLL QLLLL}$]
   \begin{tabular}{cl}
     $LLL$ & Latitude of observation to .1 degrees\\
     $Q$ & Quadrant of observation\\
@@ -175,7 +300,7 @@ There are four main groups:
 \subsection{111 Group: Land Observations}
 
 \begin{description}
-\item[$i_Ri_XhVV$]
+\item[$\pmb{i_Ri_XhVV}$]
   \begin{description}
   \item[$i_R$] -- Precipitation indicator
     \begin{tabular}{cl}
@@ -223,7 +348,7 @@ There are four main groups:
   \end{description}
 \end{description}
 \begin{description}
-\item[$Nddff$]
+\item[$\pmb{Nddff}$]
   \begin{description}
   \item[$ N$] -- Total cloud cover
     \begin{tabular}{llllll}
@@ -235,33 +360,33 @@ There are four main groups:
 \item[$ff$] -- wind speed in units determined by wind type indicator (see above)
 \end{description}
 \begin{description}
-\item[$00fff$ (optional)]
+\item[$\pmb{00fff}$ (optional)]
   \begin{description}
   \item[$fff$] -- wind speed if value greater than 100
   \end{description}
 \end{description}
 \begin{description}
-\item[$1sTTT$] -- Temperature
+\item[$\pmb{1sTTT}$] -- Temperature
   \begin{description}
   \item[$s$] -- sign of temperature (0=positive, 1=negative)
   \item[$TTT$] -- Temperature in \SI{0.1}{\gc}
   \end{description}
 \end{description}
 \begin{description}
-\item[$2sTTT$] -- Dewpoint
+\item[$\pmb{2sTTT}$] -- Dewpoint
     \begin{description}
     \item[$s$] -- sign of temperature (0=positive, 1=negative, 9 = RH)
     \item[$TTT$] -- Dewpoint temperature in \SI{0.1}{\gc} (if $s$ is 9, $TTT$ is relative humidity)
   \end{description}
 \end{description}
 \begin{description}
-\item[$3PPPP$] -- Station pressure in \SI{0.1}{hPa} (thousandths digit omitted, last digit can be slash, then pressure in full \si{hPa})
+\item[$\pmb{3PPPP}$] -- Station pressure in \SI{0.1}{hPa} (thousandths digit omitted, last digit can be slash, then pressure in full \si{hPa})
 \end{description}
 \begin{description}
-\item[$4PPPP$] -- Sea level pressure in \SI{0.1}{hPa} (thousandths digit omitted, last digit can be slash, then pressure in full \si{hPa})
+\item[$\pmb{4PPPP}$] -- Sea level pressure in \SI{0.1}{hPa} (thousandths digit omitted, last digit can be slash, then pressure in full \si{hPa})
 \end{description}
 \begin{description}
-\item[$4a_3hhh$] -- Geopotential of nearest mandatory pressure level (use for high altitude stations where sea level pressure reduction is not accurate)
+\item[$\pmb{4a_3hhh}$] -- Geopotential of nearest mandatory pressure level (use for high altitude stations where sea level pressure reduction is not accurate)
   
   \begin{description}
   \item[$a_3$] -- -- mandatory pressure level
@@ -273,7 +398,7 @@ There are four main groups:
 \end{description}
 
 \begin{description}
-\item[$5appp$] -- Pressure tendency over 3 hours
+\item[$\pmb{5appp}$] -- Pressure tendency over 3 hours
   \begin{description}
   \item[$a$] -- characteristics of pressure tendency
     \begin{tabular}{l}
@@ -291,7 +416,7 @@ There are four main groups:
   \end{description}
 \end{description}
 \begin{description}
-\item[$6RRRt$] -- Liquid precipitation
+\item[$\pmb{6RRRt}$] -- Liquid precipitation
   \begin{description}
   \item[$RRR$] -- Precipitation amount in mm
 
@@ -310,7 +435,7 @@ There are four main groups:
   \end{description}
 \end{description}
 \begin{description}
-\item[$7wwW_1W_2$] -- Present and past weather
+\item[$\pmb{7wwW_1W_2}$] -- Present and past weather
   \begin{description}  
   \item[$ww$] The present weather codes can be found in the next page.
 
@@ -328,11 +453,54 @@ There are four main groups:
       8 -- showers\\
       9 -- thunderstorms
     \end{tabular}
-    \newpage
-    \begin{landscape}
+  \end{description}
+\end{description}
+\begin{description}
+  \item[$\pmb{8NC_LC_MC_H}$] -- Cloud type information
+    \begin{description}
+      \item[$N$] -- Amount of low clouds covering sky, if no low clouds, the amount of the middle clouds
+      \item[$C_L$] -- Low cloud type
+
+        \begin{tabular}{ll}
+          0 -- no low clouds& 1 -- cumulus humulis or fractus (no vertical development)\\
+          \multicolumn{2}{l}{2 -- cumulus mediocris or congestus (moderate vertical development)}\\
+          3 -- cumulonimbus calvus (no outlines nor anvil)&4 -- stratocumulus cumulogenitus (formed by spreading of cumulus)\\
+          5 -- stratocumulus& 6 -- stratus nebulosus (continuous sheet)\\
+          7 -- stratus or cumulus fractus (bad weather)&8 -- cumulus and stratocumulus (multilevel)\\
+          9 -- cumulonimbus with anvil&/ -- low clouds unobserved due to darkness or obscuration
+        \end{tabular}
+      \item[$C_M$] -- Middle cloud type
+        
+        \begin{tabular}{ll} 
+         0 -- no middle clouds&1 -- altostratus translucidous (mostly transparent)\\
+          2 -- altostratus opacus or nimbostratus&3 -- altocumulus translucidous (mostly transparent)\\
+          4 -- patches of altocumulus (irregular, lenticular)&5 -- bands of altocumulus\\
+          \multicolumn{2}{l}{6 -- altocumulus cumulogenitus (formed by spreading of cumulus)}\\
+          7 -- altocumulus (multilayers)&8 -- altocumulus castellanus (having cumuliform tufts)\\
+          9 -- altocumulus of a chaotic sky&/ -- middle clouds unobserved due to darkness or obscuration \\
+        \end{tabular}
+      \item[$C_H$] -- High cloud type
+
+        \begin{tabular}{ll}
+          0 -- no high clouds&1 -- cirrus fibratus (wispy)\\
+          2 -- cirrus spissatus (dense in patches)&3 -- cirrus spissatus cumulogenitus (formed out of anvil)\\
+          4 -- cirrus unicus or fibratus (progressively invading sky) &\\
+          \multicolumn{2}{l}{5 -- bands of cirrus or cirrostratus invading sky (less than 45$^\circ$ above horizon)}\\
+          \multicolumn{2}{l}{6 -- bands of cirrus or cirrostratus invading sky (more than 45$^\circ$ above horizon)}\\
+          7 -- cirrostratus covering whole sky&8 -- cirrostratus not covering sky but not invading\\
+          9 -- cirrocumulus &/ -- high clouds unobserved due to darkness or obscuration \\
+      \end{tabular}
+\end{description}
+\end{description}
+
+\begin{description}
+\item[$\pmb{9GGgg}$] -- Time of observation in hours and minutes (Optional)
+\end{description}
+%\newpage
+\begin{landscape}
 
       \pagenumbering{gobble}
-      \hspace{-8cm}
+      \hspace{-1cm}
       {\small
         \begin{tabular}{llll}
           \multicolumn{4}{l}{$ww$ -- \textbf{Present weather}}\\
@@ -383,50 +551,9 @@ There are four main groups:
       \end{tabular}
     }
 \end{landscape}
-\newpage
+%\newpage
 \pagenumbering{arabic}
- \setcounter{page}{6}
-\end{description}
-\end{description}
-\begin{description}
-  \item[$8NC_LC_MC_H$] -- Cloud type information
-    \begin{description}
-      \item[$N$] -- Amount of low clouds covering sky, if no low clouds, the amount of the middle clouds
-      \item[$C_L$] -- Low cloud type
-
-        \begin{tabular}{ll}
-          0 -- no low clouds& 1 -- cumulus humulis or fractus (no vertical development)\\
-          \multicolumn{2}{l}{2 -- cumulus mediocris or congestus (moderate vertical development)}\\
-          3 -- cumulonimbus calvus (no outlines nor anvil)&4 -- stratocumulus cumulogenitus (formed by spreading of cumulus)\\
-          5 -- stratocumulus& 6 -- stratus nebulosus (continuous sheet)\\
-          7 -- stratus or cumulus fractus (bad weather)&8 -- cumulus and stratocumulus (multilevel)\\
-          9 -- cumulonimbus with anvil&/ -- low clouds unobserved due to darkness or obscuration
-        \end{tabular}
-      \item[$C_M$] -- Middle cloud type
-        
-        \begin{tabular}{ll} 
-         0 -- no middle clouds&1 -- altostratus translucidous (mostly transparent)\\
-          2 -- altostratus opacus or nimbostratus&3 -- altocumulus translucidous (mostly transparent)\\
-          4 -- patches of altocumulus (irregular, lenticular)&5 -- bands of altocumulus\\
-          \multicolumn{2}{l}{6 -- altocumulus cumulogenitus (formed by spreading of cumulus)}\\
-          7 -- altocumulus (multilayers)&8 -- altocumulus castellanus (having cumuliform tufts)\\
-          9 -- altocumulus of a chaotic sky&/ -- middle clouds unobserved due to darkness or obscuration \\
-        \end{tabular}
-      \item[$C_H$] -- High cloud type
-
-        \begin{tabular}{ll}
-          0 -- no high clouds&1 -- cirrus fibratus (wispy)\\
-          2 -- cirrus spissatus (dense in patches)&3 -- cirrus spissatus cumulogenitus (formed out of anvil)\\
-          4 -- cirrus unicus or fibratus (progressively invading sky) &\\
-          \multicolumn{2}{l}{5 -- bands of cirrus or cirrostratus invading sky (less than 45$^\circ$ above horizon)}\\
-          \multicolumn{2}{l}{6 -- bands of cirrus or cirrostratus invading sky (more than 45$^\circ$ above horizon)}\\
-          7 -- cirrostratus covering whole sky&8 -- cirrostratus not covering sky but not invading\\
-          9 -- cirrocumulus &/ -- high clouds unobserved due to darkness or obscuration \\
-      \end{tabular}
-\end{description}
-\end{description}
-
-9GGgg -- Time of observation in hours and minutes
+ \setcounter{page}{8}
 
 \subsection{222 Group:  Sea Surface Observations}
 
@@ -436,48 +563,152 @@ This is a more specialized field that will not be covered in the present lab ses
 
 This is a more specialized field that will not be covered in the present lab session.
 
+\subsection{Example of a SYNOP code interpretation}
 
-\section{Graphical Representation}
+This example starting point is the following SYNOP code:
 
-Synoptic maps use a simple graphical representation to easily convey the information in a condensed way. The way the information is arranged can be found in figure \ref{fig_synop_scheme}.
+\begin{displaymath}
+AAXX\;08383\;08181\;12580\;21212\;10248\;20093\;49175\;55006\;60002\;81201
+\end{displaymath}
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.65\textwidth]{Figs/Station_model.png}
-\caption{Example of graphical codification of a SYNOP report. Source: National Weather Service Forecast Office, Nashville, TN. Notice that we will report temperatures in degrees Celsius instead of Farenheit.}\label{fig_synop_scheme}
-\end{center}
-\end{figure}
-
-The conventional symbols used for cloud cover, pressure trend, past weather, and cloud types in this representation can be found in figure \ref{fig_synop_symbols_1}. The wind speed and present weather graphical codification are included in figures \ref{fig_synop_symbols_2} and \ref{fig_synop_symbols_3}.
-
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.6\textwidth]{Figs/wxcode2.png}
-\caption{Example of standard graphical codification for cloud cover, pressure trend, past weather, and cloud types in a SYNOP report. Source: Weather Graphics Technologies.}\label{fig_synop_symbols_1}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.4\textwidth]{Figs/partc_3.png}
-\caption{Conventional codification for wind speed in a SYNOP report. Source: RMetS, The Royal Meteorological Society.}\label{fig_synop_symbols_2}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=0.8\textwidth]{Figs/wxcode1.png}
-\caption{Example of standard graphical codification for present weather in a SYNOP report. Source: Weather Graphics Technologies.}\label{fig_synop_symbols_3}
-\end{center}
-\end{figure}
-
+The interpretation of the given report is as follows:
+\begin{description}
+  \item{$IIiii = 08383$}: Location of the station, $08$ means Spain and
+    $383$ means Huelva. You can check this online at \cite{stindex}.
+   \item{$YYGGi_w = 08181$}: Data taken on the 8-th day of the month at
+     $18.00$ with wind given in \si{m.s^{-1}} units from anenometer.
+   \item{$i_Ri_XhVV = 12580$}: $i_R = 1$ means that precipitation is
+     reported in group 1, $i_X = 2$ means that the station is manned
+     and that no present/past weather is reported because of no
+     significant changes. $h= 5$ means that lowest clouds appear at
+     heights 600 to 1000 m. Finally $VV = 80$ means that minimum visibility
+     extends to \SI{30}{km}.
+   \item{$Nddff = 21212$}: $N = 2$ means that two eigths of the sky is
+     covered by clouds, $dd = 12$ means that wind is from south east
+     (SE, 120$^\circ$), and $ff=12$ means that wind speed is
+     $v = \SI{12}{m.s^{-1}} = 12*1.94 = \SI{23}{knots}$.
+   \item{$1sTTT = 10248$}: $s = 0$, positive temperature; $TTT = 248$,
+     temperature $T = \SI{24.8}{\gc}$. 
+   \item{$2sTTT = 20093$}: $s = 0$, positive dewpoint temperature; $TTT = 093$,
+     temperature $\tau = \SI{9.3}{\gc}$. 
+   \item{$4PPPP = 49175$}: $PPPP=9175$, station pressure $p = \SI{917.5}{hPa}$. 
+   \item{$5appp = 55006$}: $a = 5$, pressure tendency since last
+     report is decreasing, then increasing with a lower resultant
+     pressure; $ppp = 006$ stands for a $\Delta p = \SI{0.6}{hPa}$ in
+     last three hours.
+   \item{$6RRRt = 60002$}: $RRR = 0$ stands for no precipitation and
+     $t = 2$ during last 12 hours.
+   \item{$8NC_LC_MC_H = 81201$}: $N = 1$ means than 1 eigth of the sky
+     is covered with low altitude clouds and $C_LC_MC_H = 201$ means
+     that low clouds are \textit{towering cumulus}, that there are no
+     middle clouds, and that high clouds are \textit{cirrus}.
+   \end{description}
 
 \newpage
-\section{Results and Conclusions}
+\section{Graphical Representation}
 
+Synoptic maps use a simple graphical representation to easily convey
+the information in a condensed way. The way the information is
+arranged can be found in figure \ref{circle_synop}. The center of
+the plot is a circle for manned stations or a triangle for automatic stations.
 
-\nocite{WinNT}
+The conventional symbols used for cloud cover, pressure trend, past weather, and cloud types in this representation can be found in figure \ref{fig_synop_symbols_1}. The wind speed and present weather graphical codification are included in figures \ref{circle_synop} and \ref{fig_synop_symbols_3}.
+
+The graphical encoding of the example given in the previous subsection
+is the following:
+\begin{center}
+\includegraphics[width=0.3\textwidth]{Figs/drawing_synop.png}
+\end{center}
+
+%\newpage
+\section{Results: pressure charts}
+\subsection{Exercise 1}
+Given the sea level pressure field in the map represented in figure
+\ref{map_ex1} draw the associated isobar lines. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Figs/parta_1.png}
+\caption{Exercise 1}\label{map_ex1}
+\end{center}
+\end{figure}
+
+\newpage
+\subsection{Exercise 2}
+Given the surface pressure chart represented in figure
+\ref{map_ex2} fill the given table and find and label the following items:
+
+\begin{center}
+\begin{tabular}{ccc}
+Cold front &	Col& Warm front\\
+Trough     &Occlusion&	High pressure center\\
+Low pressure trough&	Low pressure center& High pressure ridge\\
+Warm sector & & \\
+\end{tabular}
+\end{center}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Figs/map_ex_2.png}
+\caption{Exercise 2}\label{map_ex2}
+\end{center}
+\end{figure}
+
+%\begin{table}[h]
+\begin{center}{\large
+\begin{tabular}{c|c|c|c|}
+\hline
+\hline
+Location & Pressure in \si{mb} & Location & Pressure in \si{mb}\\
+\hline
+A & & E & \\ 
+\hline
+B &  & F & \\
+\hline 
+C & & G & \\
+\hline 
+D & & H & \\ 
+\hline
+\hline
+\end{tabular}
+}
+\end{center}
+%\caption{Exercise 2}\label{tab_ex2}
+%\end{table}
+
+\newpage
+\subsection{Exercise 3}
+Given the following SYNOP codes decipher them and encode them graphically.
+
+\begin{tabular}{cccccccccccc}
+%
+%La Coruña & & & & & & & & & & \\
+%
+ 08001  &  11430  &  82001  &  10108  & 20075 & &40310 & 51004 &
+ 69901  &  75022  &  8562X  &  \\
+%
+%<SYN Title='AAXX' TStamp='908539200' LatLon='36.783, 137.050' BId='47606'
+%SName=', FUSHIK' SType='AUTO'>
+%<SYID WS='4'>16124 47606</SYID>
+%<SYG Vis='9000' Wind='200, 4' T='20.7' TD='19.7' P='998.5' P0='1000.0' Pd='3 4.2'
+%Prec='7, 12' WX='8180' Tmx='27.4'>1//59 /2009 10207 20197 39985 40000 53042 60072 78180 333 10274</SYG>
+%</SYN>
+47606  &  11650 & 80516 & 10176 & 20141 & 39844 & 40104& 52020& 60092& 71022& 8552 \\
+%
+%
+%<SYN Title='AAXX' TStamp='908539200' LatLon='37.483, 130.900' BId='47115'
+%SName=', ULLUNGDO ISLAND' Elev='223'>
+%<SYID WS='4'>16124 47115</SYID>
+%<SYG Ceiling='3000' Vis='5000' Wind='50, 8' T='17.6' TD='14.1' P='984.4' P0='1010.4' Pd='2 2.0'
+%Prec='9, 12' WX='1022' Tmx='18.9' Clouds='8552/'>11650 80516 10176 20141 39844 40104 52020 60092 71022 8552/ 333 10189 31017 55000 70126 92064</SYG>
+%</SYN>
+%
+47115 & 11650 & 80516 & 10176 & 20141 & 39844&  40104&  52020& 60092&
+71022& 8552 &\\
+03535 & 41470 & 82312 & 10077 & 20064 & & 40007 & 58012&  & 72165&  8682  &  \\
+\end{tabular}
+
+\nocite{rmetsoc}
 
 %----------------------------------------------------------------------------------------
 
@@ -485,6 +716,30 @@ The conventional symbols used for cloud cover, pressure trend, past weather, and
 %\bibliographystyle{apalike}
 
 \bibliography{sample}
+
+\appendix
+\section{Appendix: SYNOP code graphical transcription}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Figs/circle_and_winds.png}
+\caption{Left: Example of graphical codification of a SYNOP report. Black
+  ink should be used unless otherwise stated. Right: Conventional codification for wind speed in a SYNOP report. Source: RMetS, The Royal Meteorological Society.}\label{circle_synop}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{Figs/wxcode2.png}
+\caption{Example of standard graphical codification for cloud cover, pressure trend, past weather, and cloud types in a SYNOP report. Source: Weather Graphics Technologies.}\label{fig_synop_symbols_1}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Figs/wxcode1.png}
+\caption{Example of standard graphical codification for present weather in a SYNOP report. Source: Weather Graphics Technologies.}\label{fig_synop_symbols_3}
+\end{center}
+\end{figure}
 
 %----------------------------------------------------------------------------------------
 
