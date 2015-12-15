@@ -1,0 +1,271 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University/School Laboratory Report
+% LaTeX Template
+% Version 3.1 (25/3/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Linux and Unix Users Group at Virginia Tech Wiki 
+% (https://vtluug.org/wiki/Example_LaTeX_chem_lab_report)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+%\usepackage[version=3]{mhchem} % Package for chemical equation typesetting
+\usepackage{siunitx} % Provides the \SI{}{} and \si{} command for typesetting SI units
+\newcommand{\gc}{\degreeCelsius}
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage[utf8]{inputenc} % Required for special characters processing
+%
+\usepackage{fullpage} % changes the margin
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\usepackage{times} % Uncomment to use the Times New Roman font
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Atmospheric Sounding: the Skew-T -- Log p Diagram} \\ Meteorology
+  \& Climatology} % Title
+
+\author{Environmental Science Degree} % Author name
+
+\date{\today} % Date for the report
+
+\begin{document}
+
+\maketitle % Insert the title, author and date
+
+\begin{center}
+\begin{tabular}{l r}
+Date Performed: & \underline{\hspace{3cm}}  \\ % Date the experiment was performed
+Partners: & \underline{\hspace{6cm}} \\ % Partner names
+& \underline{\hspace{6cm}} \\
+& \underline{\hspace{6cm}} \\
+Instructor: & Prof.~F.~Pérez-Bernal % Instructor/supervisor
+\end{tabular}
+\end{center}
+
+% If you wish to include an abstract, uncomment the lines below
+\begin{abstract}
+  In this lab session students learn what is an atmospheric sounding
+  and how to plot the dewpoint and temperature data from the sounding
+  in a \textit{Skew-T -- Log p}. From the diagram they will learn how to
+  graphically calculate relevant atmospheric parameters as well as how
+  to predict the outcome of basic atmospheric configurations using the
+  encoded information.
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+\section{Introduction}
+The \textit{Skew-T -- Log p} diagram is probably the most commonly used thermodynamic
+diagram in weather analysis and forecasting. A large number of meteorological
+variables, indices, and atmospheric conditions can be found directly
+or through simple analytical procedures. Typically, the environmental
+temperature, dewpoint temperature, wind speed and wind direction at
+various pressure levels are plotted on the diagram \cite{awstr79006}. This plot is
+commonly called a ``sounding'' \cite{FM-3}.
+
+Let's assume that the following data have been obtained from a sounding
+\begin{center}
+\begin{tabular}{|cccc|}
+\hline
+Pressure (hPa) &  Height (m) & Temperature ($^\circ$C) &Dewpoint ($^\circ$C)  \\
+\hline
+ 1000.0       &  30         & 10.0         &  5.0  \\
+  900.0       & 930         &  4.0         &  2.0  \\% alpha = 7.8 K/km EC
+  850.0       &1400         &  0.0         & -3.0  \\% alpha = 8.5 K/km EC
+  750.0       &2312         &-10.0         &-12.0  \\% alpha = 7.7 K/km EC
+  650.0       &3392         &-12.0         &-19.0  \\% alpha = 3.7 K/km E
+  500.0       &5460         &-20.0         &-37.0  \\% alpha = 3.9 K/km E
+  400.0       &7070         &-34.0         &-38.0  \\% alpha = 8.7 K/km EC
+  200.0       &11600        &-70.0         &-75.0  \\   
+\hline
+\end{tabular}
+\end{center}
+
+According to this data, and with the help of the \textit{Skew-T -- Log p}
+diagram presentation that can
+be found in Moodle, students are requested to accomplish several tasks.
+
+\section{Objectives}
+
+\begin{enumerate}
+  \item Plot temperature and dewpoint curves
+  \item Compute atmospheric parameters from the sounding data.
+  \item Determine atmospheric stability.
+  \item Find levels of interest.
+  \item Find positive and negative potential energy areas.
+  \item Solve basic atmospheric situations.
+\end{enumerate}
+
+\section{Results}
+
+\subsection{Plot Temperature and Dewpoint Curves in the Diagram}
+
+On each given level isobar, plot the temperature to the
+nearest tenths of degree Celsius. Each temperature point is represented by a small dot
+located at the proper temperature -- pressure intersection. A small
+circle, should be drawn around each dot plotted. 
+
+After plotting all levels for which data was given in the previous table, connect each
+point to the next with a solid line. Use a ruler
+when drawing the connecting lines between the plotted points.
+
+
+Repeat the previous procedure for the dewpoint data, using a different color to
+distinguish both curves.
+
+\subsection{Compute Atmospheric Parameters}
+
+Compute on the diagram following the procedure explained in the lab
+the following atmospheric parameters:
+
+\begin{itemize}
+
+\item Mixing ratio ($m$) in isobars $1000$, $750$, and $\SI{500}{hPa}$.
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Mixing Ratio&\SI{1000}{hPa} &\SI{750}{hPa} &\SI{500}{hPa} \\
+\hline
+$m$ &~\hspace{2.25cm}~&~\hspace{2.25cm}~&~\hspace{2.25cm}~\\
+\hline
+\end{tabular}
+
+
+\item Saturation mixing ratio ($M$) in isobars $1000$, $750$, and $\SI{500}{hPa}$.
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Sat.~Mixing Ratio&\SI{1000}{hPa} &\SI{750}{hPa} &\SI{500}{hPa} \\
+\hline
+$M$ &~\hspace{2.25cm}~&~\hspace{2.25cm}~&~\hspace{2.25cm}~\\
+\hline
+\end{tabular}
+
+
+\item Relative humidity ($h$) in isobars $1000$, $750$, and $\SI{500}{hPa}$.
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Rel.~hum.&\SI{1000}{hPa} &\SI{750}{hPa} &\SI{500}{hPa} \\
+\hline
+$h$ &~\hspace{2.25cm}~&~\hspace{2.25cm}~&~\hspace{2.25cm}~\\
+\hline
+\end{tabular}
+
+\item Vapor tension ($e$) in isobars $1000$, $750$, and $\SI{500}{hPa}$.
+
+\begin{tabular}{|c|c|c|c|}
+\hline
+Vapor Pressure&\SI{1000}{hPa} &\SI{750}{hPa} &\SI{500}{hPa} \\
+\hline
+$e$ &~\hspace{2.25cm}~&~\hspace{2.25cm}~&~\hspace{2.25cm}~\\
+\hline
+\end{tabular}
+
+\end{itemize}
+
+\subsection{Atmospheric Stability}
+
+According to the plotted data, find out the stability of the
+atmosphere in the following intervals.
+
+\vspace{0.25cm}
+\begin{tabular}{c|c|c|c|c|c|}
+ &\SI{1000}{hPa}--\SI{900}{hPa} &\SI{900}{hPa}--\SI{850}{hPa} &\SI{850}{hPa}--\SI{750}{hPa} &\SI{750}{hPa}--\SI{650}{hPa} &\SI{650}{hPa}--\SI{500}{hPa} \\
+\hline
+AI/AS/CI\footnote{AI: absolutely instable, AS: absolutely stable, CI:
+  conditionally instable.} &~\hspace{1cm}~&~\hspace{1cm}~&~\hspace{1cm}~&~\hspace{1cm}~&~\hspace{1cm}~\\
+\hline
+\end{tabular}
+
+
+\subsection{Levels of Interest}
+
+Mark in your diagram the existing levels of interest and fill the following table.
+
+\vspace{0.25cm}
+\begin{tabular}{c|c|c|c|c|c|}
+ & LCL & CCL  & LFC & ELm & ELc \\
+\hline
+Level (m) &~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~\\
+\hline
+\end{tabular}
+
+\subsection{Positive and Negative Areas}
+
+Mark in your diagram the positive and negative potential energy areas.
+
+\subsection{Situation 1: Mechanical Lifting}
+In an atmospheric state given by the plotted sounding, assume that an
+air parcel driven by the wind finds a mountain in its way and is forced to ascend from the \SI{1000}{hPa} to the
+\SI{750}{hPa} isobar to return afterwards to the initial sea level.
+
+Find using the diagram
+\begin{enumerate}
+\item The air temperature at the mountain top and once the air returns
+  to sea level.
+\item Relative humidity in the top of the mountain and downwards, back
+  in sea level.
+\item The mixing ratio increment.
+\end{enumerate}
+
+\vspace{0.25cm}
+\begin{tabular}{c|c|c|c|c|c|}
+ & $T_{top}$ & $T_{bottom}$  & $h_{top}$ & $h_{bottom}$  & $\Delta m$ \\
+\hline
+Solution &~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~\\
+\hline
+\end{tabular}
+\subsection{Situation 2: Convective Lifting}
+In an atmospheric state given by the plotted sounding, an air parcel
+at sea level is heated until it reaches a temperature $T_0 =
+\SI{20}{\gc}$ and at this point starts a convective lifting.
+
+Find using the diagram
+\begin{enumerate}
+\item The relative humidity and dewpoint of the air when it starts to
+  lift.
+\item Does this parcel of air attain its convective equilibrium
+  height? If so, what is this height?
+\item Are clouds formed due to the convective lift of this air parcel?
+  If so, at what height will be the basis and the top of the clouds? 
+\end{enumerate}
+
+\vspace{0.25cm}
+\begin{tabular}{c|c|c|c|c|c|}
+ & $h_{0}$ & $\tau_{0}$  & $z_{conv}$ & $z_{basis}$  & $z_{top}$ \\
+\hline
+Solution &~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~&~\hspace{2cm}~\\
+\hline
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{apalike}
+
+\bibliography{sample}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
