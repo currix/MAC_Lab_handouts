@@ -97,7 +97,7 @@ code, is graphically encoded and represented.
 
 SYNOP stands for \textit{surface SYNOPtic observation} and it is a
 numerical code (called FM-12 by the World Meteorological Office
-WMO\cite{FM-12}) that has been used for decades as the main way of
+WMO\cite{WMOFM-12,FM-12}) that has been used for decades as the main way of
 reporting and transmitting weather information. The observations could
 be made by manned and automated weather stations.
 
@@ -126,17 +126,17 @@ The SYNOP code is very similar to a different code, the METAR. METAR
 is an abbreviation of \textit{MÉTéorologique Aviation Régulière} and
 is a report designed for aviation that could be issued from an
 Automatic Weather Station (AWS) or a manned station. The METAR code is
-also managed by the WMO. METARs usually carry less information aboutr
+also managed by the WMO. METARs usually carry less information about
 the weather than SYNOPs and are issued more frequently. In particular,
 if conditions change significantly since the last METAR, a SPECI, or
-specia weather report is produced. SPECIs are sent to report heavy
+special weather report is produced. SPECIs are sent to report heavy
 rain, sudden increase or direction change of wind, strong gusts, or
 sudden temperature or visibility variations.
 
 \section{Objectives}
 The objectives of this lab session are the following:
 \begin{enumerate}
-\item Students understand surface pressure maps and their relationship
+\item Understand surface pressure maps and their relationship
   with wind speed.
 \item Identify pressure systems and fronts on a synoptic weather
   chart.
@@ -161,10 +161,10 @@ following considerations.
 \begin{itemize}
 \item Each map point can only be associated with one isobar, thus
   isobar lines never cross. 
-\item Isobar lines are continuous, forming loops or terminationg in the
+\item Isobar lines are continuous, forming loops or terminating in the
   map edges, but never branch or terminate in a certain point.
 \item A particular sense can be given to an isobar considering that
-  the pressure sould grow to the right of the given sense.
+  the pressure should grow to the right of the given sense.
 \end{itemize} 
 
 Isobars are also helpful because their distribution helps us to
@@ -176,8 +176,8 @@ they indicate \textit{light} winds.
 
 Wind blows almost parallel to the isobars. Around a high pressure area
 (an anticyclone) winds  blow clockwise and slightly across the isobars, away from
-the centre of the anticyclone. In low pressure zones, wind blows
-anticlockwise slightly across the isobars towards the centre of the low pressure.
+the center of the anticyclone. In low pressure zones, wind blows
+anticlockwise slightly across the isobars towards the cent-re of the low pressure.
 
 \textit{Buys Ballot’s law} states that if you stand with your back to
 the wind in the northern Hemisphere, low pressure will be on your
@@ -197,7 +197,7 @@ cold and foggy weather in winter. In association with anticyclones,
 pressure. They bring similar weather to that associated with
 anticyclones.
 
-A \textit{cyclone}, also known as a depression or a ‘low’ can be recognised on a weather
+A \textit{cyclone}, also known as a depression or a ‘low’ can be recognized on a weather
 chart by an area of closely spaced isobars, often in a roughly
 circular shape, where pressure is lower than surrounding areas. They
 are often accompanied by fronts. The lowest pressure occurs at the
@@ -210,7 +210,7 @@ depressions.
 
 
 \textit{Cold fronts} can be identified on weather charts as bold lines
-with triangles. These are blue when displayed on colour charts. The
+with triangles. These are blue when displayed on color charts. The
 points of the triangle indicate the direction in which the front is
 moving. A cold front indicates a change in air mass, where warmer air
 is being replaced by colder air. They often bring short spells of
@@ -219,8 +219,8 @@ accompanied by a decrease in temperature, a veer in wind direction and
 a change to brighter showery conditions. 
 
 \textit{Warm fronts} can be identified on weather charts as bold lines
-with semi-circles or humps. These are coloured red when displayed on
-colour charts. The direction of the humps indicates the direction in
+with semi-circles or humps. These are colored red when displayed on
+color charts. The direction of the humps indicates the direction in
 which the front is moving. A warm front indicates a change from a
 colder to a warmer air mass. They often bring spells of prolonged and
 sometimes heavy rainfall, with strong winds. 
@@ -230,10 +230,10 @@ ahead of the cold front. It often brings mild temperatures but the
 weather can be overcast with drizzle.
 
 \textit{Occluded fronts} can be identified on weather charts as bold
-lines with sets of triangles and semi-circles. These are coloured
-purple on coloured weather charts. The direction in which the symbols
+lines with sets of triangles and semi-circles. These are colored
+purple on co-loured weather charts. The direction in which the symbols
 face indicates the direction in which the front is
-travelling. Occlusions are formed when the cold front overtakes the
+traveling. Occlusions are formed when the cold front overtakes the
 warm front, therefore they have similar characteristics to a cold
 front, but less intense.
 
@@ -241,40 +241,42 @@ Other features of interest are \textit{troughs} and \textit{cols}.
 \textit{Troughs} are lines of low
 pressure, high vorticity, clouds, and possible precipitation, wind
 shift and confluence. They often do not possess the strong horizontal
-gradientes of temperature and moisture that characterize fronts. \textit{Cols} can be identified as an area of slack pressure between two anticyclones and two depressions.
+gradients of temperature and moisture that characterize fronts. \textit{Cols} can be identified as an area of slack pressure between two anticyclones and two depressions.
 
 
 \section{Synop Code Description}
 
-The general syntax of the SYNOP code is as follows
-\begin{align*}
-&IIiii \text{ or } IIIII\; YYGGi_w\; 99LLL\; QLLLL\\
-&i_Ri_XhVV\; Nddff\; 00fff\; 1sTTT\; 2sTTT\; 3PPPP\; 4PPPP\; 5appp\; 6RRRt\; 7wwW_1W_2\; 8NC_LC_MC_H\; 9GGgg\\
-&222Dv\; 0sTTT\; 1PPHH\; 2PPHH\; 3dddd\; 4PPHH\; 5PPHH\; 6IEER\; 70HHH\; 8aTTT\\
-&333\; 0....\; 1sTTT\; 2sTTT\; 3Ejjj\; 4Esss\; 5jjjj\; jjjjj\; 6RRRt\; 7RRRR\; 8Nchh\; 9SSss
-\end{align*}
 
-Very few reports will use all of the groups. For example, only at a coastal station would the section 222 (wave
-information) be included, and even that station might not include all of the groups in the 222
-section. Also, individual groups may be left out of an observation for a number of reasons.
-Different regions may have requirements which will include groups or exclude groups,
-principally in section 333.
-
-
-There are four main groups:
+The SYNOP code data are divided in  four main groups:
 
 \begin{description}
-\item{000 Group} Identification and Location
+\item{000 Group} Data Identifier
 \item{111 Group} Land Observations
 \item{222 Group} Sea Surface Observations
 \item{333 Group} Climatological Data
 \end{description}
 
+
+
+
+Most reports do not make use all of the groups. For example, only at a coastal station would the section 222 (wave
+information) be included, and even that station might not include all of the groups in the 222
+section. Also, individual groups may be left out of an observation for a number of reasons.
+Different regions may have requirements which will include groups or exclude groups,
+principally in section 333.
+
+We will deal with land synoptic reports is the first group, which are often stated as $AAXX$ and are compliant with the WMO Code FM 12 XI SYNOP.  The general syntax of the SYNOP code for such reports is as follows
+\begin{align*}
+&YYGGi_w\; IIiii \text{ or } IIIII\;  99LLL\; QLLLL\\
+&i_Ri_XhVV\; Nddff\; 00fff\; 1sTTT\; 2sTTT\; 3PPPP\; 4PPPP\; 5appp\; 6RRRt\; 7wwW_1W_2\; 8NC_LC_MC_H\; 9GGgg\\
+&222Dv\; 0sTTT\; 1PPHH\; 2PPHH\; 3dddd\; 4PPHH\; 5PPHH\; 6IEER\; 70HHH\; 8aTTT\\
+&333\; 0....\; 1sTTT\; 2sTTT\; 3Ejjj\; 4Esss\; 5jjjj\; jjjjj\; 6RRRt\; 7RRRR\; 8Nchh\; 9SSss
+\end{align*}
+
+
 \subsection{000 Group: Identification and Location}
 
 \begin{description}
-\item[$\pmb{IIiii}$] The WMO number of the station\cite{stindex,ogimet}.
-\item[$\pmb{IIIII}$] Ship or Buoy Observations.The ship or buoy identifier.
 \item[$\pmb{YYGGi_w}$]
   \begin{tabular}{cl}
     $YY$ & The day of the month\\
@@ -282,18 +284,20 @@ There are four main groups:
     $i_w$ & Wind type indicator\\
     0  & m/s (estimated)\\
     1  & m/s (from anemometer)\\
-    2  & knots (estimated)\\
-    3  & knots (from anemometer)
+    3  & knots (estimated)\\
+    4  & knots (from anemometer)
   \end{tabular}
-\item[$\pmb{99LLL QLLLL}$]
+\item[$\pmb{IIiii}$] The WMO number of the station\footnote{In order to check station codes visit the url \url{http://weather.rap.ucar.edu/surface/stations.txt} or make a query at NOAA website \url{http://www.nws.noaa.gov/tg/siteloc.php}.}\nocite{stindex}.
+\item[$\pmb{IIIII}$] Ship or Buoy Observations.The ship or buoy identifier. (Not reported in land observations)
+\item[$\pmb{99LLL QLLLL}$] Observation location. (Not reported in fixed land station)
   \begin{tabular}{cl}
-    $LLL$ & Latitude of observation to .1 degrees\\
+    $LLL$ & Latitude of observation to $0.1$ degrees\\
     $Q$ & Quadrant of observation\\
     1 & North east \\
     3 & South east\\
     5 & South west\\
     7 & North west\\
-    $LLLL$ & Longitude of  observation to .1 degrees
+    $LLLL$ & Longitude of  observation to $0.1$ degrees
   \end{tabular}
 \end{description}
 
@@ -373,10 +377,10 @@ There are four main groups:
   \end{description}
 \end{description}
 \begin{description}
-\item[$\pmb{2sTTT}$] -- Dewpoint
+\item[$\pmb{2sTTT}$] -- Dew point
     \begin{description}
     \item[$s$] -- sign of temperature (0=positive, 1=negative, 9 = RH)
-    \item[$TTT$] -- Dewpoint temperature in \SI{0.1}{\gc} (if $s$ is 9, $TTT$ is relative humidity)
+    \item[$TTT$] -- Dew point temperature in \SI{0.1}{\gc} (if $s$ is 9, $TTT$ is relative humidity)
   \end{description}
 \end{description}
 \begin{description}
@@ -444,8 +448,8 @@ There are four main groups:
     \begin{tabular}{l}
       0 -- cloud covering less than half of sky\\
       1 -- cloud covering more than half of sky during part of period and more than half during part of period\\
-      2 -- cloud covering more thna half of sky\\
-      3 -- sandstorm, duststorm or blowing snow\\
+      2 -- cloud covering more than half of sky\\
+      3 -- sandstorm, dust storm or blowing snow\\
       4 -- fog, or thick haze\\
       5 -- drizzle\\
       6 -- rain\\
@@ -517,10 +521,10 @@ There are four main groups:
         20 -- drizzle&21 -- rain&22 -- snow&23 -- rain and snow\\
         24 -- freezing rain&25 -- rain showers&26 -- snow showers&27 -- hail showers\\
         28 -- fog& 29 -- thunderstorms& & \\
-        \multicolumn{4}{l}{Duststorm, sandstorm, drifting or blowing snow}\\
-        \multicolumn{2}{l}{30 -- slight to moderate duststorm, decreasing in intensity}&\multicolumn{2}{l}{31 -- slight to moderate duststorm, no change}\\
-        \multicolumn{2}{l}{32 -- slight to moderate duststorm, increasing in intensity}&\multicolumn{2}{l}{33 -- severe duststorm, decreasing in intensity}\\
-        \multicolumn{2}{l}{34 -- severe duststorm, no change}&\multicolumn{2}{l}{35 -- severe duststorm, increasing in intensity}\\
+        \multicolumn{4}{l}{Dust storm, sandstorm, drifting or blowing snow}\\
+        \multicolumn{2}{l}{30 -- slight to moderate dust storm, decreasing in intensity}&\multicolumn{2}{l}{31 -- slight to moderate dust storm, no change}\\
+        \multicolumn{2}{l}{32 -- slight to moderate dust storm, increasing in intensity}&\multicolumn{2}{l}{33 -- severe dust storm, decreasing in intensity}\\
+        \multicolumn{2}{l}{34 -- severe dust storm, no change}&\multicolumn{2}{l}{35 -- severe dust storm, increasing in intensity}\\
         \multicolumn{2}{l}{36 -- slight to moderate drifting snow, below eye level}&\multicolumn{2}{l}{37 -- heavy drifting snow, below eye level}\\
         \multicolumn{2}{l}{38 -- slight to moderate drifting snow, above eye level}&\multicolumn{2}{l}{39 -- heavy drifting snow, above eye level}\\
         \multicolumn{4}{l}{Fog or ice fog}\\
@@ -546,7 +550,7 @@ There are four main groups:
         \multicolumn{4}{l}{Thunderstorms}\\
         \multicolumn{2}{l}{91 -- thunderstorm in past hour, currently only light rain}&\multicolumn{2}{l}{92 -- thunderstorm in past hour, currently only moderate to heavy rain}\\
         \multicolumn{2}{l}{93 -- thunderstorm in past hour, currently only light snow or rain/snow mix}&\multicolumn{2}{l}{94 -- thunderstorm in past hour, currently only moderate to heavy snow or rain/snow mix}\\
-        95 -- light to moderate thunderstorm&96 -- light to moderate thunderstorm with hail&97 -- heavy thunderstorm&98 -- heavy thunderstorm with duststorm\\
+        95 -- light to moderate thunderstorm&96 -- light to moderate thunderstorm with hail&97 -- heavy thunderstorm&98 -- heavy thunderstorm with dust storm\\
         99 -- heavy thunderstorm with hail & & &\\
       \end{tabular}
     }
@@ -573,23 +577,24 @@ AAXX\;08383\;08181\;12580\;21212\;10248\;20093\;49175\;55006\;60002\;81201
 
 The interpretation of the given report is as follows:
 \begin{description}
+  \item{$AAXX$}: FM12-XI Ext.\ SYNOP. Land Station
   \item{$IIiii = 08383$}: Location of the station, $08$ means Spain and
     $383$ means Huelva. You can check this online at \cite{stindex}.
    \item{$YYGGi_w = 08181$}: Data taken on the 8-th day of the month at
-     $18.00$ with wind given in \si{m.s^{-1}} units from anenometer.
+     $18.00$ with wind given in \si{m.s^{-1}} units from anemometer.
    \item{$i_Ri_XhVV = 12580$}: $i_R = 1$ means that precipitation is
      reported in group 1, $i_X = 2$ means that the station is manned
      and that no present/past weather is reported because of no
      significant changes. $h= 5$ means that lowest clouds appear at
      heights 600 to 1000 m. Finally $VV = 80$ means that minimum visibility
      extends to \SI{30}{km}.
-   \item{$Nddff = 21212$}: $N = 2$ means that two eigths of the sky is
+   \item{$Nddff = 21212$}: $N = 2$ means that two eighths of the sky is
      covered by clouds, $dd = 12$ means that wind is from south east
      (SE, 120$^\circ$), and $ff=12$ means that wind speed is
      $v = \SI{12}{m.s^{-1}} = 12*1.94 = \SI{23}{knots}$.
    \item{$1sTTT = 10248$}: $s = 0$, positive temperature; $TTT = 248$,
      temperature $T = \SI{24.8}{\gc}$. 
-   \item{$2sTTT = 20093$}: $s = 0$, positive dewpoint temperature; $TTT = 093$,
+   \item{$2sTTT = 20093$}: $s = 0$, positive dew point temperature; $TTT = 093$,
      temperature $\tau = \SI{9.3}{\gc}$. 
    \item{$4PPPP = 49175$}: $PPPP=9175$, station pressure $p = \SI{917.5}{hPa}$. 
    \item{$5appp = 55006$}: $a = 5$, pressure tendency since last
@@ -598,7 +603,7 @@ The interpretation of the given report is as follows:
      last three hours.
    \item{$6RRRt = 60002$}: $RRR = 0$ stands for no precipitation and
      $t = 2$ during last 12 hours.
-   \item{$8NC_LC_MC_H = 81201$}: $N = 1$ means than 1 eigth of the sky
+   \item{$8NC_LC_MC_H = 81201$}: $N = 1$ means than 1 eighth of the sky
      is covered with low altitude clouds and $C_LC_MC_H = 201$ means
      that low clouds are \textit{towering cumulus}, that there are no
      middle clouds, and that high clouds are \textit{cirrus}.
@@ -621,14 +626,13 @@ is the following:
 \end{center}
 
 %\newpage
-\section{Exercisess}
+\section{Exercises}
 \paragraph{Exercise 1}
-Given the sea level pressure field in the map represented in the figure
-draw the associated isobar lines. 
+Given the sea level pressure field values draw the associated isobar lines. 
 
 \paragraph{Exercise 2}
-Given the surface pressure chart represented in figure
-\ref{map_ex2} fill the given table and find and label the following items:
+Given the surface pressure chart represented in the figure
+fill the given table and find and label the following items:
 
 \begin{center}
 \begin{tabular}{ccc}
@@ -700,11 +704,15 @@ Given the following SYNOP codes decipher them and encode them graphically.
 
 
 \begin{center}
-\includegraphics[angle=90,origin=c,width=0.85\textwidth]{Figs/parta_1.png}
+\includegraphics[angle=90,origin=c,width=0.8\textwidth]{Figs/parta_1.png}
+
+\textbf{Exercise 1}. Sea level pressure values.
 \end{center}
 
 \begin{center}
-\includegraphics[angle=90,origin=c,width=0.9\textwidth]{Figs/map_ex_2.png}
+\includegraphics[angle=90,origin=c,width=0.8\textwidth]{Figs/map_ex_2.png}
+
+\textbf{Exercise 2}. Met Office SYNOP Map.
 \end{center}
 
 %----------------------------------------------------------------------------------------
